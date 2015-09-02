@@ -22,7 +22,7 @@ module.exports = function(environment) {
       sessionServiceName: 'session',
       providers: {
         'facebook-connect': {
-          appId: '300184213525586', // beta
+          appId: 'SET APP-ID HERE',
           scope: 'email,user_likes,user_posts,user_actions.music'
         }
       }
