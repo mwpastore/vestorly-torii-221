@@ -16,6 +16,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    torii: {
+      sessionServiceName: 'session',
+      providers: {
+        'facebook-connect': {
+          appId: '300184213525586', // beta
+          scope: 'email,user_likes,user_posts,user_actions.music'
+        }
+      }
     }
   };
 

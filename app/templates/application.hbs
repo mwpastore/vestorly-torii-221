@@ -1,3 +1,9 @@
 <h2 id="title">Welcome to Ember</h2>
 
+{{#unless session.isAuthenticated}}
+  <a href='#' {{action 'loginWithFacebook'}}>Login</a>
+{{else}}
+  <a href='#' {{action 'logout'}}>Logout</a>
+{{/unless}}
+
 {{outlet}}
